@@ -78,7 +78,7 @@ function draw() {
             // flip + draw
             // x = x * .95 + .05 * (width - predictions[0].landmarks[0][0]);
             // y = y * .95 + .05 * predictions[0].landmarks[0][1];
-            x = width - predictions[0].landmarks[0][0];
+            x = predictions[0].landmarks[0][0];
             y = predictions[0].landmarks[0][1];
             
             var c = HSVtoRGB(hue, settings.saturation, settings.brightness);

@@ -8,7 +8,7 @@ var scaleFactor = 0.25;
 
 var settings = {
   debug:false,
-  alphaFade:50,
+  alphaFade:5,
   saturation:255,
   brightness:100
 };
@@ -101,6 +101,7 @@ function draw() {
 
 function modelReady() {
   console.log("Model ready!");
+  select("#loading").style("opacity", 0);
 }
 
 // A function to draw ellipses over the detected keypoints
